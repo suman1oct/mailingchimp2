@@ -1,0 +1,27 @@
+/* dashboard font size */
+.ttl {
+    font-size: 40px;
+}
+.ussps {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+    color: #FF9800;
+}
+/* for spsce with icons */
+.sps{
+    margin-right: 10px;
+    color: #FF9800;
+}
+
+.content-grid {
+  max-width: 100vw;
+}
+
+.demo-card-square.mdl-card {
+  width: 400px;
+  height: 500px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  
+}

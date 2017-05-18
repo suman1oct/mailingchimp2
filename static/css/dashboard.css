@@ -1,0 +1,62 @@
+/* dashboard font size */
+.ttl {
+    font-size: 40px;
+}
+.ussps {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+    color: #FF9800;
+}
+/* for spsce with icons */
+.sps{
+    margin-right: 10px;
+    color: #FF9800;
+}
+
+.back img {
+    width:100%;
+    height: 89vh;
+}
+
+.start {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+}
+
+.start button {
+    font-size: 35px;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    margin-top: 60vh;
+    margin-left: 35vw;
+}
+
+.demo-card-event.mdl-card {
+  width: 100%;
+  height: 270px;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}

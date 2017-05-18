@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+{% load static %}
+{{ form.media }}
+
+<div><center><h2>DASHBOARD</h2></center></div>
+{% for campaignn in usercampaign_list %}
+USER: {{campaignn.user}}<br>
+CAMPAIGN NAME: {{campaignn.camapign_name}}<br>
+CREATED DATE: {{campaignn.created_date}}<br>
+MAILING LIST:  {{campaignn.mail_list}}<br>
+TEMPLATE : {{campaignn.template}}<br>
+	
+	
+{% endfor %}
+
+

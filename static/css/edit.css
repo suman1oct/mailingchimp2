@@ -1,0 +1,77 @@
+*{
+    color: #000;
+}
+.ttl {
+    font-size: 40px;
+}
+.ussps {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+    color: #FF9800;
+}
+/* for spsce with icons */
+.sps{
+    margin-right: 10px;
+    color: #FF9800;
+}
+.demo-card-event.mdl-card {
+  display: table;
+  height: 70vh;
+  width: auto;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+
+h1 {
+    text-align: center !important;
+    margin: 50px;
+}
+
+button{
+    margin-top: 20px;
+}
+.imputboxx {
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.formm input {
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	display: block;
+	font-size: 16px;
+	font-family: "Helvetica","Arial",sans-serif;
+	margin: 0;
+	padding: 4px 0;
+	width: 100%;
+	background: 0 0;
+	text-align: left;
+	color: white;
+}
+
+.formm input:focus {
+    border-bottom: 1px solid #FFC107;
+    transition: 0.5s;
+}
