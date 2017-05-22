@@ -1,4 +1,9 @@
+# python imports
+
+# django imports
 from django.conf.urls import url
+
+#local imports
 from . import views
 
 app_name = 'chimp_users'

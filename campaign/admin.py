@@ -1,7 +1,13 @@
+# django imports
+
 from django.contrib import admin
-from .models import MailingList, Template, UserCampaign
 from django import forms
+
+#django imports
+
+#local imports
 from chimp_users.models import UserProfile
+from .models import MailingList, Template, UserCampaign
 
 
 
@@ -19,7 +25,6 @@ class TemplateAdminForm(forms.ModelForm):
         return self.cleaned_data['file']
     
     def clean_template_name(self):
-        #if Template.objects.get(template_name=self.cleaned_data.get['template_name']).exists():
         if Template.objects.filter(template_name = self.cleaned_data.get('template_name')).exists():
             raise forms.ValidationError('This Template name already exists please try with another name')
         return self.cleaned_data['template_name']
@@ -87,17 +92,17 @@ class MailingListAdmin(admin.ModelAdmin):
 
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
-	list_display = ('user', 'sent_email', 'remaining_email', 'business_name', 'package')
+	list_display = ('id','user', 'sent_email', 'remaining_email', 'business_name', 'package')
 	search_fields = ('user__first_name','user__last_name')
 	list_filter = ['user__first_name']
 
 
 @admin.register(UserCampaign)
 class CampaignAdmin(admin.ModelAdmin):
-	list_display = ('campaign_name', 'user', 'created_date', 'mail_list', 'template')
+	list_display = ('id','campaign_name', 'user', 'created_date', 'mail_list', 'template')
 	search_fields = ('user',)
 	list_filter = ['user',]
-	form = TemplateAdminForm
+	
 
 
 admin.site.register(Template ,TemplateAdmin)

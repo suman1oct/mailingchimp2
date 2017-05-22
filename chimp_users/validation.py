@@ -1,5 +1,10 @@
+#python imports
+
+#django imports
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+
+#local imports
 
 
 

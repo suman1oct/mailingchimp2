@@ -1,4 +1,9 @@
+# python imports
+
+# django imports
 from django.db import models
+
+#local imports
 from .choices import PACKAGE_CHOICES
 
 

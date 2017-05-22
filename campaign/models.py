@@ -1,8 +1,13 @@
+# python imports
+import uuid
+import os
+
+# django imports
 from django.db import models
 from django.utils import timezone
 from .choices import CATEGORY_CHOICES
-import uuid
-import os
+
+#local imports
 
 
 def get_maillistFile_path(instance, filename):
