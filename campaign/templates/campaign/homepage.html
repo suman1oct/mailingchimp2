@@ -31,27 +31,7 @@
                     {% endif %}
 				</div>
 			</div>
-			<div class="col-lg-8 col-lg-offset-2">
-					{% for template in templatelist_list %}
-					<div class="col-lg-4 text-center" style="color:#fff;">
-						<h4>{{template.template_name}}</h4>
-						<img class="img-responsive" data-toggle="modal" data-target="#temp-pic-{{template}}" style="height:60vH; width:100%; cursor:pointer;" src={{MEDIA_URL}}{{template.image}}>
-					</div>
-					{% endfor %}
-			</div>
-            {% for template in templatelist_list %}
-            <!-- Modal -->
-            <div id="temp-pic-{{template}}" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-content">
-                            <img src="{{MEDIA_URL}}{{template.image}}" height="100%" width="100%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+			
 		</div>
         <div class="back col-lg-12">
             <img class="img-responsive" src="{% static 'image/background.jpg' %}" alt="background">

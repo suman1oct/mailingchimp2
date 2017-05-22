@@ -189,7 +189,7 @@ class DashboardView(LoginRequiredMixin, generic.ListView):
 		return UserCampaign.objects.filter(user = self.request.user)
 
 
-class HomepageView(generic.ListView):
+class HomepageView(generic.TemplateView):
 	
 	"""
 	Homepage View
@@ -197,24 +197,7 @@ class HomepageView(generic.ListView):
 
 	template_name = 'campaign/homepage.html'
 
-	def get(self, *args, **kwargs):
-		"""
-		if user is already logged in then redirect to dashbard
-		"""
-
-		if self.request.user.is_authenticated():
-			return redirect('campaign:dashboard')
-		return super(HomepageView, self).get(*args, **kwargs)
 	
-	def get_queryset(self):
-		"""
-		send all object of template to the dashboard
-		"""
-
-		return Template.objects.all()
-	
-
-
 class CampaignDetailView(LoginRequiredMixin,ValidCampaignMixin, generic.DetailView):
 	"""
 	it will send detail of a campaign
